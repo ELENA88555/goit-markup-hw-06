@@ -692,6 +692,13 @@ background-color: transparent;
   height: 11px;
 }
 
+.btn-cloze:focus .btn-cloze-icon {
+fill: var(--logo-link);
+}
+
+.btn-cloze:hover .btn-cloze-icon {
+  fill: var(--logo-link);
+  }
 
 .overlay-content {
   position: relative;
