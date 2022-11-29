@@ -971,6 +971,7 @@ color: rgba(255, 255, 255, 0.6);
 .modal-btn-footer {
  display: flex;
  justify-content: center;
+ gap: 10px;
  align-items: center;
  margin:auto;
  margin-left: 12px;
@@ -992,14 +993,13 @@ transition: background-color 250px var(--cubic-bezier);
 
 .form-footer-icon {
   fill: var(--white-color);
-  margin-left: auto;
+ 
 }
 
 .modal-btn-footer:focus, .modal-btn-footer:hover {
  background-color:#188CE8;
 }
 
-
-
-
-#188CE8
+.form-footer {
+  margin-left: auto;
+}
