@@ -34,7 +34,7 @@ img {
   height: auto;
 }
 
-input, button {
+a, button {
   cursor: pointer;
 }
 .container {
@@ -644,7 +644,7 @@ width: 100%;
 height: 100%;
 top: 0px;
 background-color: rgba(0, 0, 0, 0.2);
-transition: opaciti 300ms var(--cubic-bezier), visibility 300ms var(--cubic-bezier);
+transition: opacity 300ms var(--cubic-bezier), visibility 300ms var(--cubic-bezier);
   }
 
  
@@ -768,12 +768,15 @@ transition: transform 250ms var(--cubic-bezier);
   background-color: transparent;
   outline: transparent;
   padding: 0 0 0 42px;
+  font-size: 12px;
   transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 
 }
 
 
 .modal-label{
+  display: block;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -829,6 +832,7 @@ color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
+  font-size: 12px;
   outline: transparent;
   transition: border-color 250ms var(--cubic-bezier);
 } 
@@ -890,6 +894,18 @@ transition: background-color 250px var(--cubic-bezier);
   fill: var(--white-color);
 }
 
+.modal-check:hover + .checkbox-text span {
+border-color: var(--logo-link);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.modal-check:focus + .checkbox-text span {
+  border-color: var(--logo-link);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+  }
+
 .form-checkbox {
   margin-top: 20px;
  margin-bottom: 30px;
@@ -908,7 +924,6 @@ transition: background-color 250px var(--cubic-bezier);
   }
 
 .footer-text-form {
- margin-left: 94px;
   margin-bottom: 20px;
   font-weight: 700;
 font-size: 14px;
@@ -924,7 +939,7 @@ color: var(--white-color);
  justify-content: center;
  align-items: center;
  margin: auto;
- margin-left: 93px;
+
 }
 
 .footer-input {
@@ -977,10 +992,14 @@ transition: background-color 250px var(--cubic-bezier);
 
 .form-footer-icon {
   fill: var(--white-color);
-  margin-left: 10px;
+  margin-left: auto;
 }
 
 .modal-btn-footer:focus, .modal-btn-footer:hover {
  background-color:#188CE8;
 }
 
+
+
+
+#188CE8
